@@ -3,6 +3,7 @@ pages:
   image: ruby:2.1
   script:
   - gem install jekyll
+  - gem install redcarpet
   - jekyll build -d public
   artifacts:
     paths:
