@@ -3,7 +3,7 @@
 
 ----
 
-Example [Jekyll] site using GitLab Pages. Read more at https://doc.gitlab.com/ee/pages/
+Example [Jekyll] site using GitLab Pages. Read more at http://doc.gitlab.com/ee/pages/README.html
 
 -----
 # Theme: Jekyll 3 Default
