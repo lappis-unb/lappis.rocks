@@ -10,10 +10,9 @@ Example [Jekyll] site using GitLab Pages. Read more at http://doc.gitlab.com/ee/
 
 # Original source:
 
-This project was created with [Jekyll] 3.1.2 default template by running `jekyll new project` locally. 
+This project was created with [Jekyll] v.3.1.2 default template by running `jekyll new project` locally. 
 After that, the project was pushed to this repository with the following configurations:
 
-- Jekyll version: 3.1.2
 - GitLab CI config: [`.gitlab-ci.yml`]
 - Gitignore: [`.gitignore`]
 - Jekyll config: [`_config.yml`]
