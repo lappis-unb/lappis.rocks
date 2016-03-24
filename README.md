@@ -36,8 +36,10 @@ To use this project as your user/group website, you will need one additional ste
 
 If you forked this project for your own use, please go to `Project` -> `Settings` and remove the forking relationship, which won't be necessary in this case. 
 
+Enjoy!
+
 [Jekyll]: http://jekyllrb.com/
 [jek-312]: https://rubygems.org/gems/jekyll/versions/3.1.2
-[`_config.yml`]: https://gitlab.com/jekyll-themes/default-bundler/blob/master/_config.yml
+[`_config.yml`]: https://gitlab.com/pages/jekyll/blob/master/_config.yml
 [`.gitlab-ci.yml`]: https://gitlab.com/pages/jekyll/blob/master/.gitlab-ci.yml
 [`.gitignore`]: https://gitlab.com/pages/jekyll/blob/master/.gitignore
