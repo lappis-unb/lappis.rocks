@@ -3,7 +3,7 @@
 
 ----
 
-View site: https://pages.gitlab.io/jekyll/
+Example [Jekyll] site using GitLab Pages. Read more at https://doc.gitlab.com/ee/pages/
 
 -----
 # Theme: Jekyll 3 Default
@@ -27,6 +27,14 @@ To work locally with this project, there are a few options. But let's keep it si
 - Fork, clone or download this project
 - Adjust [`_config.yml`] according to your project
 - Preview your project: `jekyll serve`
+
+# GitLab User or Group Page
+
+To use this project as your user/group website, you will need one additional step: just rename your project to `namespace.gitlab.io`, where `namespace` is your `username` or `groupname`. This can be done by navigating to `Project` -> `Settings`.
+
+# Forked projects
+
+If you forked this project for your own use, please go to `Project` -> `Settings` and remove the forking relationship, which won't be necessary in this case. 
 
 [Jekyll]: http://jekyllrb.com/
 [jek-312]: https://rubygems.org/gems/jekyll/versions/3.1.2
