@@ -16,7 +16,7 @@ After that, the project was pushed to this repository with the following configu
 - Jekyll version: 3.1.2
 - GitLab CI config: [`.gitlab-ci.yml`]
 - Gitignore: [`.gitignore`]
-- Jekyll config: [`_config.yml`](https://gitlab.com/jekyll-themes/default-bundler/blob/master/_config.yml)
+- Jekyll config: [`_config.yml`]
 
 # Building locally
 
@@ -28,5 +28,8 @@ To work locally with this project, there are a few options. But let's keep it si
 - Adjust [`_config.yml`] according to your project
 - Preview your project: `jekyll serve`
 
+[Jekyll]: http://jekyllrb.com/
+[jek-312]: https://rubygems.org/gems/jekyll/versions/3.1.2
+[`_config.yml`]: https://gitlab.com/jekyll-themes/default-bundler/blob/master/_config.yml
 [`.gitlab-ci.yml`]: https://gitlab.com/pages/jekyll/blob/master/.gitlab-ci.yml
 [`.gitignore`]: https://gitlab.com/pages/jekyll/blob/master/.gitignore
