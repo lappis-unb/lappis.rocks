@@ -3,7 +3,7 @@
 
 ---
 
-Example [jekyll] website using GitLab Pages.
+Example [Jekyll] website using GitLab Pages.
 
 Learn more about GitLab Pages at https://pages.gitlab.io and the official
 documentation http://doc.gitlab.com/ee/pages/README.html.
@@ -28,7 +28,7 @@ This project's static Pages are built by [GitLab CI][ci], following the steps
 defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
 
 ```
-image: ruby:2.1
+image: ruby:2.3
 
 pages:
   script:
