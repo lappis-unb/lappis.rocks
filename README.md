@@ -1,15 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [GitLab CI](#gitlab-ci)
-- [Building locally](#building-locally)
-- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
-- [Did you fork this project?](#did-you-fork-this-project)
-- [Troubleshooting](#troubleshooting)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ![Build Status](https://gitlab.com/pages/jekyll/badges/master/build.svg)
 ![Jekyll Version](https://img.shields.io/gem/v/jekyll.svg)
 
@@ -21,6 +9,18 @@ Learn more about GitLab Pages at https://pages.gitlab.io and the official
 documentation http://doc.gitlab.com/ee/pages/README.html.
 
 ---
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [GitLab CI](#gitlab-ci)
+- [Building locally](#building-locally)
+- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
+- [Did you fork this project?](#did-you-fork-this-project)
+- [Troubleshooting](#troubleshooting)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## GitLab CI
 
