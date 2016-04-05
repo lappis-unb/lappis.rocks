@@ -1,6 +1,6 @@
+image: ruby:2.3
+
 pages:
-  stage: deploy
-  image: ruby:2.1
   script:
   - gem install jekyll
   - jekyll build -d public
