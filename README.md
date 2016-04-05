@@ -1,44 +1,84 @@
-![Jekyll Version](https://img.shields.io/gem/v/jekyll.svg)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [GitLab CI](#gitlab-ci)
+- [Building locally](#building-locally)
+- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
+- [Did you fork this project?](#did-you-fork-this-project)
+- [Troubleshooting](#troubleshooting)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ![Build Status](https://gitlab.com/pages/jekyll/badges/master/build.svg)
+![Jekyll Version](https://img.shields.io/gem/v/jekyll.svg)
 
-----
+---
 
-Example [Jekyll] site using GitLab Pages. Read more at http://doc.gitlab.com/ee/pages/README.html
+Example [jekyll] website using GitLab Pages.
 
------
-# Theme: Jekyll 3 Default
+Learn more about GitLab Pages at https://pages.gitlab.io and the official
+documentation http://doc.gitlab.com/ee/pages/README.html.
 
-# Original source:
+---
 
-This project was created with [Jekyll] v.3.1.2 default template by running `jekyll new project` locally. 
-After that, the project was pushed to this repository with the following configurations:
+## GitLab CI
 
-- GitLab CI config: [`.gitlab-ci.yml`]
-- Gitignore: [`.gitignore`]
-- Jekyll config: [`_config.yml`]
+This project's static Pages are built by [GitLab CI][ci], following the steps
+defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
 
-# Building locally
+```
+image: ruby:2.1
 
-_**Note:** We assume you already have [Jekyll 3.1.2][jek-312] installed and up and running on your computer._
+pages:
+  script:
+  - gem install jekyll
+  - jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+```
 
-To work locally with this project, there are a few options. But let's keep it simple:
+## Building locally
 
-- Fork, clone or download this project
-- Adjust [`_config.yml`] according to your project
-- Preview your project: `jekyll serve`
+To work locally with this project, you'll have to follow the steps below:
 
-# GitLab User or Group Page
+1. Fork, clone or download this project
+1. [Install][] Jekyll
+1. Generate the website: `jekyll build -d public`
+1. Preview your project: `jekyll serve`
+1. Add content
 
-To use this project as your user/group website, you will need one additional step: just rename your project to `namespace.gitlab.io`, where `namespace` is your `username` or `groupname`. This can be done by navigating to `Project` -> `Settings`.
+Read more at Jekyll's [documentation][].
 
-# Forked projects
+## GitLab User or Group Pages
 
-If you forked this project for your own use, please go to `Project` -> `Settings` and remove the forking relationship, which won't be necessary in this case. 
+To use this project as your user/group website, you will need one additional
+step: just rename your project to `namespace.gitlab.io`, where `namespace` is
+your `username` or `groupname`. This can be done by navigating to your
+project's **Settings**.
 
-Enjoy!
+Read more about [user/group Pages][userpages] and [project Pages][projpages].
 
+## Did you fork this project?
+
+If you forked this project for your own use, please go to your project's
+**Settings** and remove the forking relationship, which won't be necessary
+unless you want to contribute back to the upstream project.
+
+## Troubleshooting
+
+1. CSS is missing! That means two things:
+
+    Either that you have wrongly set up the CSS URL in your templates, or
+    your static generator has a configuration option that needs to be explicitly
+    set in order to serve static assets under a relative URL.
+
+[ci]: https://about.gitlab.com/gitlab-ci/
 [Jekyll]: http://jekyllrb.com/
-[jek-312]: https://rubygems.org/gems/jekyll/versions/3.1.2
-[`_config.yml`]: https://gitlab.com/pages/jekyll/blob/master/_config.yml
-[`.gitlab-ci.yml`]: https://gitlab.com/pages/jekyll/blob/master/.gitlab-ci.yml
-[`.gitignore`]: https://gitlab.com/pages/jekyll/blob/master/.gitignore
+[install]: https://jekyllrb.com/docs/installation/
+[documentation]: https://jekyllrb.com/docs/home/
+[userpages]: http://doc.gitlab.com/ee/pages/README.html#user-or-group-pages
+[projpages]: http://doc.gitlab.com/ee/pages/README.html#project-pages
