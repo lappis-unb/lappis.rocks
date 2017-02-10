@@ -56,6 +56,9 @@ defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
 ```
 image: ruby:2.3
 
+variables:
+  JEKYLL_ENV: production
+
 pages:
   script:
   - gem install jekyll
