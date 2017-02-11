@@ -3,8 +3,8 @@ image: ruby:2.3
 test:
   stage: test
   script:
-  - gem install jekyll
-  - jekyll build -d test
+  - bundle
+  - bundle exec jekyll build -d test
   artifacts:
     paths:
     - test
@@ -14,8 +14,8 @@ test:
 pages:
   stage: deploy
   script:
-  - gem install jekyll
-  - jekyll build -d public
+  - bundle
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
