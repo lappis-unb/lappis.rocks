@@ -6,7 +6,7 @@
 Example [Jekyll] website using GitLab Pages.
 
 Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation http://doc.gitlab.com/ee/pages/README.html.
+documentation https://docs.gitlab.com/ce/user/project/pages/.
 
 ---
 
@@ -80,5 +80,5 @@ unless you want to contribute back to the upstream project.
 [Jekyll]: http://jekyllrb.com/
 [install]: https://jekyllrb.com/docs/installation/
 [documentation]: https://jekyllrb.com/docs/home/
-[userpages]: http://doc.gitlab.com/ee/pages/README.html#user-or-group-pages
-[projpages]: http://doc.gitlab.com/ee/pages/README.html#project-pages
+[userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
+[projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages
