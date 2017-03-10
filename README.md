@@ -18,7 +18,7 @@ documentation https://docs.gitlab.com/ce/user/project/pages/.
   - [Start by forking this repository](#start-by-forking-this-repository)
   - [Start from a local Jekyll project](#start-from-a-local-jekyll-project)
 - [GitLab CI](#gitlab-ci)
-- [Building locally](#building-locally)
+- [Using Jekyll locally](#using-jekyll-locally)
 - [GitLab User or Group Pages](#gitlab-user-or-group-pages)
 - [Did you fork this project?](#did-you-fork-this-project)
 - [Troubleshooting](#troubleshooting)
@@ -61,8 +61,8 @@ variables:
 
 pages:
   script:
-  - gem install jekyll
-  - jekyll build -d public
+  - bundle install
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
@@ -70,15 +70,17 @@ pages:
   - master
 ```
 
-## Building locally
+## Using Jekyll locally
 
 To work locally with this project, you'll have to follow the steps below:
 
 1. Fork, clone or download this project
 1. [Install][] Jekyll
-1. Generate the website: `jekyll build -d public`
-1. Preview your project: `jekyll serve`
+1. Download dependencies: `bundle`
+1. Build and preview: `bundle exec jekyll serve`
 1. Add content
+
+The above commands should be executed from the root directory of this project.
 
 Read more at Jekyll's [documentation][].
 
