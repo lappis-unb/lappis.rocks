@@ -3,10 +3,9 @@
 
 ---
 
-Example [Jekyll] website using GitLab Pages.
+Example [Jekyll] website using GitLab Pages.  View it live at https://pages.gitlab.io/jekyll
 
-Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation https://docs.gitlab.com/ce/user/project/pages/.
+[Learn more about GitLab Pages](https://pages.gitlab.io) or read the the [official GitLab Pages documentation](https://docs.gitlab.com/ce/user/project/pages/).
 
 ---
 
@@ -21,6 +20,7 @@ documentation https://docs.gitlab.com/ce/user/project/pages/.
 - [Using Jekyll locally](#using-jekyll-locally)
 - [GitLab User or Group Pages](#gitlab-user-or-group-pages)
 - [Did you fork this project?](#did-you-fork-this-project)
+- [Other examples](#other-examples)
 - [Troubleshooting](#troubleshooting)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -99,12 +99,16 @@ If you forked this project for your own use, please go to your project's
 **Settings** and remove the forking relationship, which won't be necessary
 unless you want to contribute back to the upstream project.
 
+## Other examples
+
+* [jekyll-branched](https://gitlab.com/pages/jekyll-branched) demonstrates how you can keep your GitLab Pages site in one branch and your project's source code in another.
+* The [jekyll-themes](https://gitlab.com/groups/jekyll-themes) group contains a collection of example projects you can fork (like this one) having different visual styles.
+
 ## Troubleshooting
 
 1. CSS is missing! That means two things:
-
-    Either that you have wrongly set up the CSS URL in your templates, or
-    your static generator has a configuration option that needs to be explicitly
+    * Either that you have wrongly set up the CSS URL in your templates, or
+    * your static generator has a configuration option that needs to be explicitly
     set in order to serve static assets under a relative URL.
 
 [ci]: https://about.gitlab.com/gitlab-ci/
