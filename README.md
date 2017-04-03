@@ -3,10 +3,9 @@
 
 ---
 
-Example [Jekyll] website using GitLab Pages.
+Example [Jekyll] website using GitLab Pages.  View it live at https://pages.gitlab.io/jekyll
 
-Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation https://docs.gitlab.com/ce/user/project/pages/.
+[Learn more about GitLab Pages](https://pages.gitlab.io) or read the the [official GitLab Pages documentation](https://docs.gitlab.com/ce/user/project/pages/).
 
 ---
 
@@ -18,9 +17,10 @@ documentation https://docs.gitlab.com/ce/user/project/pages/.
   - [Start by forking this repository](#start-by-forking-this-repository)
   - [Start from a local Jekyll project](#start-from-a-local-jekyll-project)
 - [GitLab CI](#gitlab-ci)
-- [Building locally](#building-locally)
+- [Using Jekyll locally](#using-jekyll-locally)
 - [GitLab User or Group Pages](#gitlab-user-or-group-pages)
 - [Did you fork this project?](#did-you-fork-this-project)
+- [Other examples](#other-examples)
 - [Troubleshooting](#troubleshooting)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -61,8 +61,8 @@ variables:
 
 pages:
   script:
-  - gem install jekyll
-  - jekyll build -d public
+  - bundle install
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
@@ -70,15 +70,17 @@ pages:
   - master
 ```
 
-## Building locally
+## Using Jekyll locally
 
 To work locally with this project, you'll have to follow the steps below:
 
 1. Fork, clone or download this project
 1. [Install][] Jekyll
-1. Generate the website: `jekyll build -d public`
-1. Preview your project: `jekyll serve`
+1. Download dependencies: `bundle`
+1. Build and preview: `bundle exec jekyll serve`
 1. Add content
+
+The above commands should be executed from the root directory of this project.
 
 Read more at Jekyll's [documentation][].
 
@@ -97,12 +99,16 @@ If you forked this project for your own use, please go to your project's
 **Settings** and remove the forking relationship, which won't be necessary
 unless you want to contribute back to the upstream project.
 
+## Other examples
+
+* [jekyll-branched](https://gitlab.com/pages/jekyll-branched) demonstrates how you can keep your GitLab Pages site in one branch and your project's source code in another.
+* The [jekyll-themes](https://gitlab.com/groups/jekyll-themes) group contains a collection of example projects you can fork (like this one) having different visual styles.
+
 ## Troubleshooting
 
 1. CSS is missing! That means two things:
-
-    Either that you have wrongly set up the CSS URL in your templates, or
-    your static generator has a configuration option that needs to be explicitly
+    * Either that you have wrongly set up the CSS URL in your templates, or
+    * your static generator has a configuration option that needs to be explicitly
     set in order to serve static assets under a relative URL.
 
 [ci]: https://about.gitlab.com/gitlab-ci/
