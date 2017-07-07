@@ -37,7 +37,7 @@ Remember you need to wait for your site to build before you will be able to see 
 1. **IMPORTANT:** Remove the fork relationship.
 Go to **Settings (⚙)** > **Edit Project** and click the **"Remove fork relationship"** button.
 1. Enable Shared Runners.
-Go to **Settings (⚙)** > **CI/CD Pipelines** and click the **"Enable shared Runners"** button.
+Go to **Settings (⚙)** > **Pipelines** and click the **"Enable shared Runners"** button.
 1. Rename the repository to match the name you want for your site.
 1. Edit your website through GitLab or clone the repository and push your changes.
 
