@@ -18,3 +18,7 @@ github_username: lappis-unb
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
+
+theme: minima
+plugins:
+  - jekyll-feed
