@@ -291,3 +291,18 @@
 #contact {
   color: #000;
 }
+
+#lab-image {
+  background-color: #000;
+  #parallax-spacer {
+      /* Create the parallax scrolling effect */
+      background-image: url("/files/lab2.png");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+ 
+      opacity: 0.6;
+      height: 350px;
+  }
+}
