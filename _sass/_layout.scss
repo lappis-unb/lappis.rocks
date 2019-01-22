@@ -100,6 +100,7 @@
 #contact {
   text-align: end;
   h2 {
+    text-align: end;
     padding-right: 100px;
     font-size: 35px;
     color: #0068b4;
@@ -108,10 +109,14 @@
   padding-bottom: 2%;
   background-image: url("/files/background_footer.png");
   background-size: cover;
+  @media only screen and (max-width: 1000px) {
+    background-image: url("/files/background_footer.png");
+  }
   .contact-wrapper {
-    padding-right: 100px; 
+    padding-right: 100px;
     .contact-heading {
       font-size: 30px;
+      margin: 0px;
       margin-bottom: $spacing-unit / 2;
     }
     .contact-col-wrapper {
@@ -120,20 +125,27 @@
       color: $grey-color;
       .contact-col {
         color: $grey-color;
-        a{
+        a {
           color: #191919ff;
         }
       }
       .contact-col-1 {
-        p{
-          text-align: end;
-          margin: 0;
-        }
-        i{
-          color: $grey-color;        
-        }
-        .username{
-          color: #191919ff;
+        .social-media-list{
+          display: flex;
+          flex-direction: row-reverse;
+          .github, .facebook, .twitter, .instagram{
+            padding-left: 20px;
+          }
+          p {
+            text-align: end;
+            margin: 0;
+          }
+          i {
+            color: $grey-color;
+          }
+          .username {
+            color: #191919ff;
+          }
         }
       }
     }
@@ -274,9 +286,10 @@
   margin-top: -20px;
   .team-photo {
     margin: 5px;
+    margin-bottom:35px;
     list-style: none;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     font-size: 12px;
     text-align: center;
     vertical-align: center;
@@ -292,11 +305,11 @@
 }
 
 #team {
-  padding-top: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   color: #000;
   #team-wrapper {
-    border: #0068b4 solid 2px;
-    border-radius: 1.5%;
+    border: #0068b4 solid 3px;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
@@ -319,34 +332,56 @@
 #projects {
   color: #000;
   text-align: justify;
-  margin-left: 5%;
+  margin-left: 10%;
   margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   .project-wrapper {
     display: flex;
     padding-top: 25px;
-    .project-title {
+    .project-title-right{
       font-size: 16px;
       font-weight: 400;
       padding-right: 20px;
       border-right: 5px solid rgba(0, 0, 0, 0.7);
-      border-radius: 1.5%;
       display: flex;
       span {
         width: 80px;
+        padding-right: 25px;
         display: block;
         margin-top: auto;
         margin-bottom: auto;
       }
     }
-    .project-description {
+    .project-title-left{
+      font-size: 16px;
+      font-weight: 400;
+      padding-left: 20px;
+      border-left: 5px solid rgba(0, 0, 0, 0.7);
+      display: flex;
+      span {
+        width: 80px;
+        padding-left: 25px;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+    .project-description-right {
       padding-left: 25px;
+      padding-right: 129px;
+      font-size: 13px;
+    }
+    .project-description-left{
+      padding-right: 25px;
+      padding-left: 129px;
       font-size: 13px;
     }
   }
-  .keywords{
+  .keywords {
     text-decoration: #000;
     margin-left: 0;
-    margin-right:0;
+    margin-right: 0;
     font-weight: 600;
   }
 }
