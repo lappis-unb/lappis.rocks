@@ -19,6 +19,12 @@ github_username: lappis-unb
 markdown: kramdown
 exclude: ["README.md"]
 
+
+collections:
+  sections:
+    output: true
+
 theme: minima
-plugins:
+plugins_dir:
+  - _plugins
   - jekyll-feed
