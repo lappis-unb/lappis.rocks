@@ -1,8 +1,14 @@
 <div id="team">
     <div id="team-wrapper">
         <h1 id="team-title">Equipe</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor nisl nec erat commodo, in aliquet dui
-        varius. In at pellentesque magna, quis ornare mauris. Vestibulum semper turpis libero, nec fringilla neque
-        
+
+        <ul class="team-container">
+            {% loop_directory directory:files/team iterator:image filter:*.jpg sort:descending %}
+            <li class="team-photo">
+                <img src="/files/team/{{ image }}.jpg" />
+                <span>{{image}}</span>
+            </li>
+            {% endloop_directory %}
+        </ul>
     </div>
 </div>
