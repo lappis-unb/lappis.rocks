@@ -50,9 +50,9 @@
     background-color: $background-color;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
-    text-align: right;
-
+    
     .menu-icon {
+        text-align: right;
       display: block;
       float: right;
       width: 36px;
@@ -256,7 +256,7 @@
   }
   @media only screen and (max-width: 1000px) {
     .background_about {
-      display:none;
+      display: none;
     }
   }
   .content-about {
@@ -271,12 +271,42 @@
   }
 }
 
+.team-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:-20px;
+    .team-photo{
+        margin: 5px;
+        list-style: none;
+        height:80px;
+        width:80px;
+        font-size: 12px;
+        text-align: center;
+        vertical-align: center;
+        img{
+            margin:auto;
+            display: block;
+            border-radius: 50%;
+        }
+        span{
+            color: #828282;
+        }
+    }
+}
+
 #team {
   padding-top: 20px;
+  color: #000;
   #team-wrapper {
     border: #0068b4 solid 2px;
-    width: 80%;
-    margin-left: 10%;
+    border-radius: 1.5%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    p {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
   }
   #team-title {
     color: #0068b4;
@@ -284,11 +314,10 @@
     margin-left: -10px;
     margin-top: -20px;
     padding-right: 25px;
-    padding-bottom: 10px;
-    padding-left: 5px;
     background: #fff;
     display: inline-flex;
   }
+  
 }
 
 #projects {
@@ -302,14 +331,14 @@
 #lab-image {
   background-color: #000;
   #parallax-spacer {
-      /* Create the parallax scrolling effect */
-      background-image: url("/files/lab2.png");
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
- 
-      opacity: 0.6;
-      height: 350px;
+    /* Create the parallax scrolling effect */
+    background-image: url("/files/lab2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.6;
+    height: 350px;
   }
 }

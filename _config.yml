@@ -26,4 +26,5 @@ collections:
 
 theme: minima
 plugins_dir:
+  - _plugins
   - jekyll-feed
