@@ -50,9 +50,9 @@
     background-color: $background-color;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
-    
+
     .menu-icon {
-        text-align: right;
+      text-align: right;
       display: block;
       float: right;
       width: 36px;
@@ -230,7 +230,9 @@
 .page-content {
   padding-top: 50px;
   p,
-  h1 {
+  h1,
+  h2,
+  h3 {
     text-align: justify;
     margin-left: 20%;
     margin-right: 20%;
@@ -266,27 +268,27 @@
   }
 }
 
-.team-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top:-20px;
-    .team-photo{
-        margin: 5px;
-        list-style: none;
-        height:80px;
-        width:80px;
-        font-size: 12px;
-        text-align: center;
-        vertical-align: center;
-        img{
-            margin:auto;
-            display: block;
-            border-radius: 50%;
-        }
-        span{
-            color: #828282;
-        }
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  .team-photo {
+    margin: 5px;
+    list-style: none;
+    height: 80px;
+    width: 80px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: center;
+    img {
+      margin: auto;
+      display: block;
+      border-radius: 50%;
     }
+    span {
+      color: #828282;
+    }
+  }
 }
 
 #team {
@@ -312,11 +314,41 @@
     background: #fff;
     display: inline-flex;
   }
-  
 }
 
 #projects {
   color: #000;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 10%;
+  .project-wrapper {
+    display: flex;
+    padding-top: 25px;
+    .project-title {
+      font-size: 16px;
+      font-weight: 400;
+      padding-right: 20px;
+      border-right: 5px solid rgba(0, 0, 0, 0.7);
+      border-radius: 1.5%;
+      display: flex;
+      span {
+        width: 80px;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+    .project-description {
+      padding-left: 25px;
+      font-size: 13px;
+    }
+  }
+  .keywords{
+    text-decoration: #000;
+    margin-left: 0;
+    margin-right:0;
+    font-weight: 600;
+  }
 }
 
 #contact {
