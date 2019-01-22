@@ -105,7 +105,7 @@
     color: #0068b4;
   }
   padding-left: 40%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   background-image: url("/files/background_footer.png");
   background-size: cover;
   .contact-wrapper {
@@ -115,6 +115,7 @@
       margin-bottom: $spacing-unit / 2;
     }
     .contact-col-wrapper {
+      margin-right: 15px;
       font-size: 15px;
       color: $grey-color;
       .contact-col {

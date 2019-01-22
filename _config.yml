@@ -14,6 +14,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 twitter_username: lappisunb
 github_username: lappis-unb
+facebook_username: lappisunb5
+instagram_username: lappisunb
 
 # Build settings
 markdown: kramdown
