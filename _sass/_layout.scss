@@ -93,6 +93,12 @@
 }
 
 #about-us {
+    .background_about{
+        position: absolute;
+    }
+    .p{
+        padding: 100px;
+    }
     background-image: linear-gradient(to right, #0068B4 , #1691C1);
 }
 
