@@ -14,6 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    scroll-behavior: smooth;
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
