@@ -51,12 +51,16 @@ module Jekyll
 
             context.stack do
 
-
-                # remove filename extension
-                images.each { |pathname| 
-                  context[@attributes['iterator']] = File.basename(pathname, @attributes['filter'].sub('*', ''))
-                  result << render_all(@nodelist, context)
-                }  
+#   #### HOTFIX by Joenio at 2019-01-22
+#
+#        aparentemente nas versões mais recentes do Liquid não existe o método render_all,
+#        comentei o código temporariamente mas será necessário corrigir de forma definitiva
+#        
+#                # remove filename extension
+#                images.each { |pathname| 
+#                  context[@attributes['iterator']] = File.basename(pathname, @attributes['filter'].sub('*', ''))
+#                  result << render_all(@nodelist, context)
+#                }  
 
                 # return pathname
                 # images.each_with_index do |item, index|
