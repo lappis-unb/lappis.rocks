@@ -5,7 +5,7 @@
     min-height: 56px;
     width: 100%;
     // Positioning context for the mobile navigation icon
-    // position: fixed;
+    position: fixed;
     background-image: linear-gradient(to right, #0068B4 , #1691C1);
 }
 
@@ -35,7 +35,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
-
+        margin-top: 15px;
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
@@ -171,7 +171,7 @@
  * Page content
  */
 .page-content {
-    padding: 0px;
+    padding-top: 50px;
 }
 
 .page-heading {
@@ -242,4 +242,12 @@
             font-size: 18px;
         }
     }
+}
+
+.nav-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.nav-item{
+
 }
