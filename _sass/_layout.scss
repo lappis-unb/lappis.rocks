@@ -98,58 +98,11 @@
  */
 
 #contact {
-  text-align: end;
-  h2 {
-    text-align: end;
-    font-size: 35px;
-    color: #0068b4;
-  }
-  padding-left: 50%;
-  padding-bottom: 2%;
+  padding-bottom: 10%;
   background-image: url("/files/background_footer.png");
   background-size: cover;
   @media only screen and (max-width: 1000px) {
     background-image: url("/files/background_footer.png");
-  }
-  .contact-wrapper {
-    padding-right: 40%;
-    .contact-heading {
-      font-size: 30px;
-      margin: 0px;
-      margin-bottom: $spacing-unit / 2;
-    }
-    .contact-col-wrapper {
-      font-size: 15px;
-      color: $grey-color;
-      .contact-col {
-        color: $grey-color;
-        a {
-          color: #191919ff;
-        }
-      }
-      .contact-col-1 {
-        .social-media-list {
-          display: flex;
-          flex-direction: row-reverse;
-          .github,
-          .facebook,
-          .twitter,
-          .instagram {
-            padding-left: 20px;
-          }
-          p {
-            text-align: end;
-            margin: 0;
-          }
-          i {
-            color: $grey-color;
-          }
-          .username {
-            color: #191919ff;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -163,10 +116,64 @@
   padding: 15px 15px 0px 15px;
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+  .contact-heading {
+    color: #fff;
+    font-size: 200%;
+    padding-top: 10%;
+    margin: 0px;
+    margin-bottom: $spacing-unit / 2;
+    border-right: 2px solid #fff;
+    padding-right: 15px;
+  }
+  .contact-col-wrapper {
+    font-size: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    .contact-col {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      i{
+        padding-right: 10px;
+        padding-top: 5px;
+      }
+      a {
+        color: #fff;
+      }
+    }
+    .contact-col-1 {
+      .github,
+      .facebook,
+      .twitter,
+      .instagram {
+        padding-left: 20px;
+      }
+      p {
+        margin: 0;
+      }
+      i {
+        color: #fff;
+      }
+      .username {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
 .contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .page-heading {
@@ -391,7 +398,7 @@
       padding-right: 129px;
       text-align: left;
       font-size: 13px;
-      .keywords{
+      .keywords {
         text-align: left;
       }
     }
@@ -400,7 +407,7 @@
       text-align: right;
       padding-left: 129px;
       font-size: 13px;
-      .keywords{
+      .keywords {
         text-align: right;
       }
     }
