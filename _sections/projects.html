@@ -1,169 +1,37 @@
-
 <div id="projects">
     <div class="title-projetos">
         <p>
             Projetos
         </p>
     </div>
-    <div class="project-wrapper">
-        <div class="project-title-right Minc">
-            <span>
-                Ecossistemas de Software
+    {% for project in site.projects %}
+        <div class="project-wrapper">
+            {% if project.side == "left" %}
+            <span class="project-description-left">
+                {% include project_info.html project=project %}
             </span>
+            <div class="project-title-left">
+                <span>
+                    {{project.name}}
+                </span>
+            </div>
+            {% else %}
+            <div class="project-wrapper">
+                <div class="project-title-right">
+                    <span>
+                        {{project.name}}
+                    </span>
+                </div>
+                <span class="project-description-right">
+                    {% include project_info.html project=project %}
+                </span>
+            </div>
+            {% endif %}
         </div>
-        <span class="project-description-right">
-            O projeto "Ecossistemas de Software Livre" é uma parceria do LAPPIS com o Ministério da Cultura (MinC),
-            iniciada em outubro de 2017 com o período de duração previsto para 24 meses. A parceria tem como objetivo
-            trazer inovação aos sistemas de softwares livres desenvolvidos pelo Ministério e realizar pesquisa aplicada
-            em
-            entrega contínua, DevOps, técnicas de aprendizagem de máquina.
-        </span>
-    </div>
-
-    <div class="bola">
-        <img src="/files/bola.png" class="bola-size">
-    </div>
-
-    <div class="project-wrapper">
-        <span class="project-description-left">
-            Projeto de um FAQ chatbot para tirar dúvidas sobre a Lei de Incentivo, e auxiliar
-            proponentes a preencher uma proposta cultural no SALIC. Contribuímos para vários projetos de software
-            livre
-            nesse projeto: Rocket.chat, Rasa. Utilizamos técnicas de deep learning tanto para o processamento de
-            linguagem
-            natural quanto para aprendizagem de fluxos de diálogos.
-            <br />
-            <br />
-            <a href="https://github.com/lappis-unb/tais">GitHub</a>
-            <p class="keywords">
-                Chatbot, FAQ, SALIC, RASA NLU,RASACORE, Rocket.chat, Deep Learning, DevOps, Entrega
-                Contínua, ElasticSearch.
-            </p>
-        </span>
-        <div class="project-title-left Tais">
-            <span>
-                Assistente Virtual Tais
-            </span>
+        <div class="bola">
+            <img src="/files/bola.png" class="bola-size">
         </div>
-    </div>
-
-
-    <div class="bola">
-        <img src="/files/bola.png" class="bola-size">
-    </div>
-
-
-    <div class="project-wrapper">
-        <div class="project-title-right Minc">
-            <span>
-                SalicML
-            </span>
-        </div>
-        <span class="project-description-right">
-            Projeto para gerar recomendações na avaliação e submissão de projetos culturais no SALIC. O
-            objetivo é
-            aplicar técnicas de aprendizagem de máquina para extrair padrões do históricos de projetos
-            culturais já
-            submetidos (cerca de 30 mil projetos), e utilizar tais padrões para recomendar anomalias, pontos de
-            melhorias
-            de projetos culturais, e gerar métricas de complexidade, e qualidade de tais projetos culturais.
-            Trabalhamos em
-            arquitetura de microsserviços para trazer inovação em sistemas legados (tais como o Salic).
-            <br />
-            <br />
-            <a href="https://github.com/lappis-unb/salic-ml">GitHub</a>
-            <br />
-            <p class="keywords">
-                Aprendizagem de máquina em
-                projetos
-                culturais, SALIC, Arquitetura Microsserviço, DevOps, Entrega Contínua, SALIC-API
-            </p>
-        </span>
-    </div>
-
-    <div class="bola">
-        <img src="/files/bola.png" class="bola-size">
-    </div>
-
-    <div class="project-wrapper">
-        <span class="project-description-left">
-            Projeto de visualização de dados para divulgação do panorama cultural promovido pela Lei de
-            Incentivo. O objetivo é, a partir dos dados agregados dos projetos submetidos no SALIC, gerar
-            dashboards
-            que
-            ilustram o panorama da cultura, tais como deslocamento de projetos culturais, acessos gratuitos,
-            indice de
-            saúde, entre outros.
-            <br />
-            <br />
-            <a href="https://lappis-unb.github.io/PromovaCultura/">GitHub</a>
-            <br />
-            <p class="keywords">
-                Dataviz, Entrega Contínua, DevOps, Panorama Cultural
-            </p>
-        </span>
-        <div class="project-title-left Promova">
-            <span>
-                Promova Cultura
-            </span>
-        </div>
-    </div>
-
-    <div class="bola">
-        <img src="/files/bola.png" class="bola-size">
-    </div>
-
-    <div class="project-wrapper">
-        <div class="project-title-right EJ">
-            <span>
-                Empurrando Juntas
-            </span>
-        </div>
-        <span class="project-description-right">
-            A interação do LAPPIS com a comunidade do Empurrando Juntas (EJ)
-            iniciou em uma parceria com o Ministério dos Direitos Humanos para desenvolver uma plataforma de
-            participação para a Secretaria Nacional dos Direitos da Criança e do Adolescente. O diferencial do EJ com
-            relação a outras plataformas de participação é o uso de técnicas de Machine Learning e Gamificação para
-            trabalhar contra a formação de bolhas de opinião.
-            <br />
-            <br />
-            <a href="https://github.com/ejplatform/ej-server/">GitHub</a>
-            <br />
-        </span>
-    </div>
-
-    <div class="bola">
-        <img src="/files/bola.png" class="bola-size">
-    </div>
-
-    <div class="project-wrapper">
-        <span class="project-description-left">
-            O projeto da CEB foca em construir um sistema de monitoramento do abastecimento e consumo da energia
-            elétrica de
-            toda a UnB. Serão instalados equipamentos de medição em vários pontos da universidade, que farão a coleta
-            de
-            diversos indicadores relacionados a qualidade e disponibilidade da eletricidade. Esses dados serão
-            transmitidos
-            pela rede para um sistema responsável por armazená-los e disponibilizá-los, seja para fins de pesquisa, ou
-            monitoramento. A equipe do LAPPIS está desenvolvendo um sistema distribuído, que coleta os dados dos
-            medidores, os
-            centraliza e fornece para uma aplicação que permite a visualização das informações de um modo mais
-            human-friendly,
-            por meio de relatórios, gráficos e comparativos.
-            <br />
-            <br />
-            <a href="https://gitlab.com/lappis-unb/projects/SMI">GitHub</a>
-            <br />
-            <p class="keywords">
-                IoT, Sistemas Distribuidos, Monitoramento Energético, DevOps, DataViz
-            </p>
-        </span>
-        <div class="project-title-left">
-            <span>
-                Gestão de Eficiência Energética
-            </span>
-        </div>
-    </div>
+    {% endfor %}
 
 
 
