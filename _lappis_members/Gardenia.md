@@ -1,4 +1,4 @@
 ---
-name: Gardenia
+name:  Gardenia Nogueira
 filename: Gardenia.jpg
 ---
