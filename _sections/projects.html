@@ -7,16 +7,18 @@
     {% for project in site.projects %}
         <div class="project-wrapper">
             {% if project.side == "left" %}
-            <span class="project-description-left">
-                {% include project_info.html project=project %}
-            </span>
-            <div class="project-title-left">
-                <span>
-                    {{project.name}}
+            <div class="project-wrapper-left">
+                <span class="project-description-left">
+                    {% include project_info.html project=project %}
                 </span>
+                <div class="project-title-left">
+                    <span>
+                        {{project.name}}
+                    </span>
+                </div>
             </div>
             {% else %}
-            <div class="project-wrapper">
+            <div class="project-wrapper-right">
                 <div class="project-title-right">
                     <span>
                         {{project.name}}
@@ -32,12 +34,4 @@
             <img src="/files/bola.png" class="bola-size">
         </div>
     {% endfor %}
-
-
-
-
-
-
-
-
 </div>
