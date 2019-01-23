@@ -22,6 +22,11 @@
   &:visited {
     color: $grey-color-dark;
   }
+
+
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .site-nav {
