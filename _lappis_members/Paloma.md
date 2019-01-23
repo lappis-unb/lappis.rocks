@@ -1,4 +1,4 @@
 ---
-name:  <a href="https://github.com/guilacerda">Guilherme Lacerda</a>
-filename: Guilherme.jpg
+name:  <a href="https://github.com/palomacmamede">Paloma Mamede</a>
+filename: Paloma.jpg
 ---
