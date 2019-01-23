@@ -16,6 +16,7 @@ twitter_username: lappisunb
 github_username: lappis-unb
 facebook_username: lappisunb5
 instagram_username: lappisunb
+medium_username: lappisunbfga
 
 # Build settings
 markdown: kramdown
@@ -27,7 +28,8 @@ collections:
     output: true
   lappis_members:
     output: true
-
+  projects:
+    output: true
 
 theme: minima
 plugins_dir:
