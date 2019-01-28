@@ -23,7 +23,6 @@
     color: $grey-color-dark;
   }
 
-
   @media only screen and (max-width: 1000px) {
     display: none;
   }
@@ -283,7 +282,7 @@
     .background_about {
       display: none;
     }
-    img{
+    img {
       width: 50%;
       height: 50%;
     }
@@ -307,24 +306,28 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: -10px;
+  justify-content: center;
+  margin-left: 0;
   .team-photo {
     margin: 13px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     list-style: none;
-    height: 60px;
-    width: 60px;
     font-size: 12px;
+    text-align: center;
+    vertical-align: center;
+   width: 60px;
+//    height: 60px;
     @media only screen and (max-width: 1000px) {
       font-size: 70%;
     }
-    text-align: center;
-    vertical-align: center;
     img {
+      height: 60px;
+      width: 60px;
       margin: auto;
       display: block;
       border-radius: 50%;
       @media only screen and (max-width: 1000px) {
-        height: 95%;
+        height: 60px;
       }
     }
     span {
@@ -538,4 +541,3 @@
     height: 350px;
   }
 }
-
