@@ -5,4 +5,4 @@ ENV LC_ALL C.UTF-8
 COPY . /jekyll
 WORKDIR /jekyll
 RUN bundle install
-ENTRYPOINT "jekyll server -H 0.0.0.0"
+ENTRYPOINT bundle exec jekyll server -H 0.0.0.0
