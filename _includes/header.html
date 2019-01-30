@@ -9,12 +9,29 @@
     </div>
 
     <nav class="site-nav">
-      <a href="#about-us" class='page-link'> Sobre</a>
-      <a href="#projects" class='page-link'> Projetos</a>
-      <a href="#team" class='page-link'> Equipe</a>
-      <a href="#contact" class='page-link'> Contato</a>
+      <div class="icontop">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div id="hideicon">
+        <a href="#about-us" class='page-link'> Sobre</a>
+        <a href="#projects" class='page-link'> Projetos</a>
+        <a href="#team" class='page-link'> Equipe</a>
+        <a href="#contact" class='page-link'> Contato</a>
+      </div>
     </nav>
-
   </div>
 
 </header>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("hideicon");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
