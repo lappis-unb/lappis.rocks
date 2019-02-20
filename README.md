@@ -5,3 +5,5 @@
 ```console
 docker run -p 4000:4000 --rm -it $(docker build -q .)
 ```
+
+open http://localhost:4000
