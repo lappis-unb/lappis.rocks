@@ -1,0 +1,23 @@
+﻿stages:
+- name: Publish image
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: site:${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
+      registry: registry.lappis.rocks
+- name: Deploy Production
+  when:
+    branch: master
+  steps:
+  - applyYamlConfig:
+      path:  ./deploy/production.yaml
+- name: Deploy Staging
+  when:
+    branch: development
+  steps:
+  - applyYamlConfig:
+      path:  ./deploy/staging.yaml
+branch:
+  include: [ master, development ]
