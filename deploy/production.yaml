@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - www.lappis.rocks
+    - lappis.rocks
     secretName: letsencrypt-prod
   rules:
-  - host: www.lappis.rocks
+  - host: lappis.rocks
     http:
       paths:
       - backend:
