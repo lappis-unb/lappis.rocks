@@ -633,7 +633,7 @@
   background-color: #000;
   #parallax-spacer {
     /* Create the parallax scrolling effect */
-    background-image: url("/files/lab2-4.png");
+    background-image: url("{{ site.baseurl }}/files/lab2-4.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
