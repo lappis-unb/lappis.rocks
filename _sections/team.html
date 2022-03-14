@@ -5,7 +5,7 @@
         <ul class="team-container">
             {% for lappis_member in site.lappis_members %}
                 <li class="team-photo">
-                    <img src="/files/team/{{ lappis_member.filename }}" />
+                    <img src="{{ site.baseurl }}/files/team/{{ lappis_member.filename }}" />
                     <span>{{lappis_member.name}}</span>
                 </li>
             {% endfor %}
