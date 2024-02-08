@@ -1,8 +1,8 @@
 ---
-name: Promova Cultura
+name: Promote Culture
 repo: 'https://lappis-unb.github.io/PromovaCultura/'
 side: left
-keywords: 'Dataviz, Entrega Contínua, DevOps, Panorama Cultural'
+keywords: 'Dataviz, Continuous Delivery, DevOps, Cultural Landscape'
 ---
 
-Projeto de visualização de dados para divulgação do panorama cultural promovido pela Lei de Incentivo. O objetivo é a partir dos dados agregados dos projetos submetidos no SALIC, gerar dashboards que ilustram o panorama da cultura, tais como deslocamento de projetos culturais, acessos gratuitos, indice de saúde, entre outros.
+Data Visualization Project for Promoting the Cultural Landscape Supported by the Incentive Law. The aim is to generate dashboards illustrating the cultural panorama based on aggregated data from projects submitted to SALIC (the Brazilian Ministry of Culture's online system), including aspects such as the geographical distribution of cultural projects, free access availability, health index, among others.
