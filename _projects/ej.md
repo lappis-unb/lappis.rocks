@@ -1,6 +1,7 @@
 ---
-name: Empurrando Juntas
+name: Empurrando Juntas/Pushing Together
 repo: 'https://github.com/ejplatform/ej-server/'
 side: right
 ---
-A interação do LAPPIS com a comunidade do Empurrando Juntas (EJ) iniciou em uma parceria com o Ministério dos Direitos Humanos para desenvolver uma plataforma de participação para a Secretaria Nacional dos Direitos da Criança e do Adolescente. O diferencial do EJ com relação a outras plataformas de participação é o uso de técnicas de Machine Learning e Gamificação para trabalhar contra a formação de bolhas de opinião.
+
+The EJ (Empurrando Juntas) is an opinion collection platform that utilizes artificial intelligence techniques to group participants based on their opinions. The grouping is done through personas, which allows for the discovery of new nuances and groups that would not be identifiable otherwise. With the results of a collection, EJ enables understanding of what the target audience thinks about a particular topic, thus strengthening its communication strategy.
