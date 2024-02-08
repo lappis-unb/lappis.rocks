@@ -7,7 +7,7 @@
 
 # Site settings
 title: Lappis
-email: caguiar@unb.br
+email: caguiar@unb.br / https://carlarocha.org
 description: > # this means to ignore newlines until "baseurl:"
   Laboratório Avançado de Produção, Pesquisa & Inovação em Software.
 baseurl:  # the subpath of your site, e.g. /blog
