@@ -340,6 +340,18 @@
   }
 }
 
+.lecture-container { display: flex; width: 100%; padding-top: 10px; padding-bottom: 10px; }
+.lecture-container .thumbnail { width: 120px; }
+.lecture-container .content { flex: 1; }
+
+.previous-offerings { list-style-type: none; }
+.previous-offerings li { display: inline-block; margin-right: 10px; }
+.previous-offerings li::before { content: "● "; color: black; padding-right: 5px; }
+
+.lecture-links { font-weight: bold; font-family: 'Titillium Web', sans-serif; }
+
+.schedule-lecture-links { font-weight: normal; font-family: inherit; }
+
 #about-us {
   display: flex;
   background-image: linear-gradient(to right, #0068b4, #2196f3);

@@ -1,11 +1,11 @@
 ---
-name: Big Open Source Sibling (BOSS)
+name: Big Open Source Sibling (BOSS) - Awarded by Gnome Community Challenge
 repo: 'https://github.com/BOSS-BigOpenSourceSibling'
 keywords: 'Mentoring Program, BOSS, Open Source, Underrepresented groups'
 side: right
 ---
+The BOSS initiative aims to support underrepresented groups in the tech industry who seek mentorship and guidance to learn how to contribute to open-source projects. We are proud to have been awarded first place in the Gnome Community Challenge, and you can find details about the challenge [here](https://www.gnome.org/challenge/winners/).
 
-The BOSS initiative aims to reach underrepresented groups in tech who want to be mentored and assisted to learn how to work on open source projects. We will provide a safe space and an accompanying methodology for them to learn basic concepts of working in a small open source project in practice and build enough background for them to, at the end of the program, be able to choose other projects to continue their contributions. The mentoring process helps build confidence, fill in technical gaps, and engage the participants. 
+Our program offers a safe and supportive environment along with a structured methodology to help participants grasp the fundamental concepts of collaborating on open-source projects. By the program's end, participants will have acquired the necessary skills to continue their contributions to other projects confidently. Our mentoring approach not only addresses technical knowledge gaps but also fosters confidence and engagement among participants. In addition to technical training, the BOSS program addresses inclusion challenges such as intersectionality and impostor syndrome. 
 
-In the BOSS program, besides the technical aspects of introducing newcomers to open source, we deal with some challenges to inclusion, namely, intersectionality and impostor syndrome. 
-[The BOSS initiative manual is available here.](https://github.com/BOSS-BigOpenSourceSibling/BigSibling/blob/main/gnome_challenge/phase3/BOSS%20-%20final%20final.pdf)
+[For more information, you can access the BOSS initiative manual here.](https://github.com/BOSS-BigOpenSourceSibling/BigSibling/blob/main/gnome_challenge/phase3/BOSS%20-%20final%20final.pdf)
