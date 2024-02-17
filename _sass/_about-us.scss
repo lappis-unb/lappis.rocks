@@ -1,0 +1,60 @@
+#about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-image: linear-gradient(to right, #0068b4, #2196f3);
+  
+    .background_about {
+      background-image: url("../files/background_sobre.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: 95%;
+      width: 90%;
+
+      .content-about {
+        padding-bottom: 10%;
+        padding-right: 30px;
+        font-size: 15px;
+
+        .item {
+          display: flex;
+          justify-content: center;
+          width: auto;
+  
+          img {
+            width: 500px;
+            padding-right: 12px;
+          }
+        }
+        
+        @media only screen and (max-width: 1200px) {
+          padding: 0px;        
+          font-size: 15px;
+
+          p {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      .background_about {
+        background: none;
+        .content-about {
+          width: 100%;
+        }
+      }
+    }
+  }
