@@ -1,21 +1,155 @@
 .projects {
     display: flex;
     color: #000;
-}
 
-.title-projetos {
-    background-color: #0068b4;
-
-    color: white;
-
-    h1 {
-        margin: 0px;
-        font-size: 40px;
-        transform: rotate(270deg);
-        line-height: 5;
+    @media only screen and (max-width: 770px) {
+        display: block;
     }
 }
 
+.title-projetos {
+    background-color: #262626;
+
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    width: 100px;
+
+    
+    h1 {
+        margin: 0px;
+        padding: 40px 0px;
+        font-size: 40px;
+        writing-mode: vertical-lr;
+    }
+    
+    @media only screen and (max-width: 770px) {
+        display: none;
+    }
+}
+
+.title-mobile {
+    display: none;
+    
+    background-color: #262626;
+    color: white;
+    
+    padding: 10px 0px;
+
+    h1 {
+        margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 770px) {
+        display: block;
+    }
+}
+
+svg {
+    height: 150px;
+    width: 150px;
+    fill: currentColor;
+    transform-origin: center;
+}
+
+.project-wrapper {
+    width: fit-content;
+}
+
+.project-content {
+    width: fit-content;
+    margin: 30px 50px 0px 50px;
+
+    @media only screen and (max-width: 770px) {
+        margin: 10%;
+    }
+}
+
+.project-title-content {
+    display: flex;
+    align-items: center;
+
+    .project-title {
+        width: -webkit-fill-available;
+
+        p {
+            margin-left: 15px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+
+            font-size: 25px;
+            font-weight: bold;
+
+            @media only screen and (max-width: 770px) {
+                font-size: 15px;
+            }
+        }
+
+        a {
+            margin-left: 15px;
+
+            font-size: 20px;
+            color: black;
+
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+}
+
+.project-description {
+    margin-top: 25px;
+
+    p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    a {
+        color: #262626;
+        text-decoration: underline;
+    }
+
+    .keywords {
+        margin-bottom: 0px;
+    }
+}
+
+.line-divide {
+    &:not(:last-of-type) {
+        height: 3px;
+        width: 50%;
+    
+        background-color: #262626;
+        
+        right: 0px;
+    }
+
+    margin-top: 30px;
+}
+
+// .project-wrapper {
+//     p {
+//         animation-duration: 3s;
+//         animation-name: slidein;
+//         animation-iteration-count: initial;
+//         animation-direction: alternate;
+//     }
+// }
+
+// @keyframes slidein {
+//     from {
+//       margin-left: 100%;
+//       width: 300%;
+//     }
+  
+//     to {
+//       margin-left: 0%;
+//       width: 100%;
+//     }
+// }
 
 // .title-projetos {
 //     display: flex;

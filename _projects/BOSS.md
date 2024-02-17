@@ -1,8 +1,8 @@
 ---
 name: Big Open Source Sibling (BOSS) - Awarded by Gnome Community Challenge
+mark: Big Open Source Sibling.
 repo: 'https://github.com/BOSS-BigOpenSourceSibling'
 keywords: 'Awarded by Gnome Community Challenge, Mentoring Program, BOSS, Open Source, Underrepresented groups'
-side: right
 ---
 The BOSS initiative aims to support underrepresented groups in the tech industry who seek mentorship and guidance to learn how to contribute to open-source projects. We are proud to have been awarded first place in the [Gnome Community Challenge](https://www.gnome.org/challenge/winners/).
 

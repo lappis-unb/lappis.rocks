@@ -1,7 +1,7 @@
 ---
 name: Virtual Assistant Tais/Rasa PT-BR Boilerplate
+mark: Virtual Assistant Tais
 repo: 'https://github.com/lappis-unb/rasa-ptbr-boilerplate'
-side: left
 keywords: >-
   Chatbot, FAQ, SALIC, RASA NLU,RASACORE, Rocket.chat, Deep Learning, DevOps,
   Entrega Contínua, ElasticSearch.

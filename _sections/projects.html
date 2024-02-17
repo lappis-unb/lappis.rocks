@@ -1,37 +1,71 @@
-<div class="projects">
-    <div class="title-projetos">
+<div id="projects" class="projects">
+    <div id="title-container" class="title-projetos">
+        <h1 id="title" >Projects</h1>
+    </div>
+    <div class="title-mobile">
         <h1>Projects</h1>
     </div>
-    <div>
+    <div class="project-wrapper">
         {% for project in site.projects %}
-            <div class="project-wrapper">
-                {% if project.side == "left" %}
-                <div class="project-wrapper-left">
-                    <span class="project-description-left">
-                        {% include project_info.html project=project %}
-                    </span>
-                    <div class="project-title-left">
-                        <span>
+            <div class="project-content">
+                <div class="project-title-content">
+                    <svg viewBox="0 0 100 100" width="40" height="40">
+                        <defs>
+                            <path id="circle"
+                            d="
+                            M 50, 50
+                            m -37, 0
+                            a 37,37 0 1,1 74,0
+                            a 37,37 0 1,1 -74,0"/>
+                        </defs>
+                        <text font-size="17">
+                            <textPath xlink:href="#circle">
+                                {{project.mark}}
+                            </textPath>
+                        </text>
+                    </svg>
+                    <div class="project-title">
+                        <p>
                             {{project.name}}
-                        </span>
+                        </p>
+                        {% if project.repo %}
+                            <a href="{{project.repo}}">
+                                <i class="fab fa-github fa-1x"></i>
+                            </a>
+                        {% endif %} 
                     </div>
                 </div>
-                {% else %}
-                <div class="project-wrapper-right">
-                    <div class="project-title-right">
-                        <span>
-                            {{project.name}}
-                        </span>
-                    </div>
-                    <span class="project-description-right">
-                        {% include project_info.html project=project %}
-                    </span>
+                <div class="project-description">
+                    {% include project_info.html project=project %}
                 </div>
-                {% endif %}
             </div>
-            <div class="bola">
-                <img src="{{ site.baseurl }}/files/bola.png" class="bola-size">
-            </div>
+            <div class="line-divide"></div>
         {% endfor %}
     </div>
 </div>
+
+<script>
+    const titleContainer = document.getElementById("title-container");
+    const title = document.getElementById("title");
+    document.addEventListener("scroll", function() {
+        const headerHeight = 55
+        const titleHeight = 225
+        const titleTop = titleContainer.offsetTop - headerHeight
+        const titleBottom = titleContainer.offsetHeight + titleTop - titleHeight
+        if (window.pageYOffset > titleTop) {
+            if (window.pageYOffset < titleBottom) {
+                title.style.position = "fixed";
+                title.style.top = "55px";
+                titleContainer.style.alignItems = "normal"
+            } else {
+                title.style.position = "absolute"
+                title.style.top = "auto";
+                titleContainer.style.alignItems = "end"
+            }
+        } else {
+            title.style.position = "relative"
+            title.style.top = "auto";
+            titleContainer.style.alignItems = "normal"
+        }
+    });
+</script>

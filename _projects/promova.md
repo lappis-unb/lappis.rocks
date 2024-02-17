@@ -1,7 +1,7 @@
 ---
 name: Promote Culture
+mark: Promote Culture
 repo: 'https://lappis-unb.github.io/PromovaCultura/'
-side: left
 keywords: 'Dataviz, Continuous Delivery, DevOps, Cultural Landscape'
 ---
 

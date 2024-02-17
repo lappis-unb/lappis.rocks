@@ -1,8 +1,8 @@
 ---
-name:  Energy Efficiency Management - Making the University of Brasilia the 4th most sustainable university in Brazil
+name: Energy Efficiency Management - Making the University of Brasilia the 4th most sustainable university in Brazil
+mark: Energy Management
 repo: 'https://gitlab.com/lappis-unb/projects/SMI'
 keywords: 'University of Brasilia the 4th most sustainable university in Brazil, IoT, Sistemas Distribuidos, Monitoramento Energético, DevOps, DataViz'
-side: right
 ---
 The project aims to establish a monitoring system for both the supply and consumption of electricity throughout the University of Brasília (UnB). Additionally, a recommendation system will be implemented to suggest the most suitable contracts for major consumers. This initiative forms part of a broader investment by the University of Brasilia aimed at positioning it as the fourth most sustainable university in Brazil.
 

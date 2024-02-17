@@ -1,13 +1,11 @@
 {{ project.content | markdownify }}
 
 
-{% if project.repo %}
-    <br />
+<!-- {% if project.repo %}
     <a href="{{project.repo}}">GitHub</a>
-{% endif %}
+{% endif %} -->
 
 {% if project.keywords %}
-    <br />
     <p class="keywords">
         {{project.keywords}}
     </p>

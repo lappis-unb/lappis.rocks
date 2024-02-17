@@ -1,7 +1,7 @@
 ---
 name: SalicML
+mark: Lei de Incentivo à Cultura
 repo: 'https://github.com/lappis-unb/salic-ml'
-side: right
 keywords: >-
   Aprendizagem de máquina em projetos culturais, SALIC, Arquitetura
   Microsserviço, DevOps, Entrega Contínua, SALIC-API

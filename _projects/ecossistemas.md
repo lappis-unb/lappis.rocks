@@ -1,6 +1,6 @@
 ---
 name: Open Source Software Ecosystems
-side: left
+mark: Open Source Software Eco
 ---
 
 The "Free Software Ecosystems" project is a partnership between LAPPIS and the Ministry of Culture (MinC), initiated in October 2017 with a planned duration of 24 months. The partnership aims to bring innovation to the open-source software systems developed by the Ministry and to conduct applied research in continuous delivery, DevOps, and machine learning techniques.
