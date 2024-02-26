@@ -38,6 +38,12 @@
                 <div class="project-description">
                     {% include project_info.html project=project %}
                 </div>
+                {% if project.open %}
+                    <div class="edital-project">
+                        <p>OPEN PROJECT</p>
+                        <a href="{{ site.baseurl }}/files/editais/{{project.open.edital}}">Edital</a>
+                    </div>
+                {% endif %} 
             </div>
             <div class="line-divide"></div>
         {% endfor %}
