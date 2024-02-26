@@ -4,9 +4,113 @@
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 140vh;
 
     background-image: linear-gradient(to right, #0068b4, #2196f3);
+
+    .info-cpbsb6 {
+      background-color: #4E008E;
+
+      width: 100%;
+      padding: 30px 0px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .content-about {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+
+
+        @media only screen and (max-width: 1200px) {
+          flex-direction: column;
+          align-items: center;
+
+          .content-right {
+            margin-top: 30px;
+          }
+        } 
+
+        .content-right {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          line-height: 18px;
+
+          .right-date {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+              margin: 0px;
+              font-size: 12px;
+            }
+            h2 {
+              margin: 0px;
+              font-weight: bold;
+              font-size: 24px;
+            }
+          }
+
+          .right-cupom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+
+            h1 {
+              margin: 0px;
+              font-size: 12px;
+            }
+            h2 {
+              margin: 0px;
+              font-weight: bold;
+              font-size: 26px;
+            }
+          }
+        }
+        
+        .content-left {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 50px;
+            margin-right: 20px;
+          }
+
+          .frase-cpbsb6 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            line-height: 18px;
+
+            h1 {
+              margin: 0px;
+              font-weight: bold;
+              font-size: 20px;
+            }
+            h2 {
+              margin: 0px;
+              font-weight: bold;
+              font-size: 12px;
+            }
+            h3 {
+              margin: 0px;
+              font-weight: bold;
+              font-size: 27px;
+            }
+          }
+        }
+      }
+    }
 
     .info-banner {
       background-color: #DC7004;
