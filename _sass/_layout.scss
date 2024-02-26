@@ -7,174 +7,78 @@
 /**
  * Site footer
  */
-
-#contact {
-  padding-bottom: 30px;
-  background-color: #191919ff;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-content: center;
-  align-items: center;
-  padding-top: 15px;
-  //background-image: url("/files/background_footer.png");
-  background-size: cover;
-  @media only screen and (max-width: 770px) {
-    background-image: none;
-    font-size: 40%;
-    padding-bottom: 5%;
-  }
+ .site-footer {
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
 }
 
-.site-footer {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-content: center;
-  align-items: center;
-  background-color: #191919ff;
-  font-size: 12px;
-  @media only screen and (max-width: 770px) {
-    font-size: 8px;
-  }
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 2%;
-  @media only screen and (max-width: 1000px) {
-    flex-direction: column;
-  }
-  .contact-heading {
-    display: flex;
-    align-items: center;
-
-    margin: 0px;
-    color: #fff;
-    font-size: 200%;
-    border-right: 2px solid #fff;
-    @media only screen and (max-width: 770px) {
-      border-bottom: 2px solid #fff;
-      border-right: none;
-      padding-bottom: 15px;
-    }
-    padding-right: 15px;
-  }
-  .contact-col-wrapper {
-    font-size: 100%;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    .contact-col {
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      @media only screen and (max-width: 770px) {
-        padding: 0px;
-      }
-      i {
-        padding-right: 10px;
-        padding-top: 5px;
-      }
-      a {
-        color: #fff;
-      }
-    }
-    .contact-col-1 {
-      .github,
-      .facebook,
-      .twitter,
-      .instagram,
-      .medium {
-        padding-right: 20px;
-      }
-      p {
-        margin: 0;
-      }
-      i {
-        color: #fff;
-      }
-      .username {
-        color: #fff;
-      }
-    }
-  }
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: $spacing-unit / 2;
 }
 
 .contact-list,
 .social-media-list {
   list-style: none;
-  margin: 12px 30px;
-  display: flex;
-  flex-direction: row;
-}
-
-.page-heading {
-  font-size: 20px;
-}
-
-.post-list {
   margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
 }
 
-.post-meta {
-  font-size: $small-font-size;
+.footer-col-wrapper {
+  font-size: 15px;
   color: $grey-color;
+  margin-left: -$spacing-unit / 2;
+  @extend %clearfix;
 }
 
-.post-link {
-  display: block;
-  font-size: 24px;
-}
+.footer-col {
+  float: left;
+  margin-bottom: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
 
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: $spacing-unit;
-}
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
-
-  @include media-query($on-laptop) {
-    font-size: 36px;
-  }
-}
-
-.post-content {
-  margin-bottom: $spacing-unit;
-
-  h2 {
-    font-size: 32px;
-
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
+  p {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
   }
 
   h3 {
-    font-size: 26px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
 
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
+.footer-col-1 {
+  width: -webkit-calc(75% - (#{$spacing-unit} / 2));
+  width:         calc(75% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+  width:         calc(25% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+  width:         calc(25% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+  .footer-col-1,
+  .footer-col-2 {
+      width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+      width:         calc(50% - (#{$spacing-unit} / 2));
   }
 
-  h4 {
-    font-size: 20px;
+  .footer-col-3 {
+      width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+      width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+}
 
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
+@include media-query($on-palm) {
+  .footer-col {
+      float: none;
+      width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+      width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
 

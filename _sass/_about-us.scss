@@ -1,14 +1,179 @@
 #about-us {
-    display: flex;
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     height: 100vh;
 
     background-image: linear-gradient(to right, #0068b4, #2196f3);
+
+    .info-banner {
+      background-color: #DC7004;
+
+      width: 100%;
+      padding-bottom: 30px;
+      padding-top: 50px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+      a {
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        background: none;
+        
+        padding: 8px 10px;
+        margin: 0px 20px;
+
+        margin-top: 10px;
+
+        font-size: 16px;
+
+        @media only screen and (max-width: 1200px) {
+            width: -webkit-fill-available;
+            margin-bottom: 20px;
+            text-align: center;
+        } 
+
+        &:hover {
+            background-color: white;
+            text-decoration: none;
+            color: #DC7004; 
+
+            padding: 10px 12px;
+
+            border: none;
+        }
+      }
+
+      .content-about {
+        font-size: 15px;
+
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+
+          .image-about {
+            width: 60px;
+            height: 60px;
+            padding: 0px 30px;
+
+            @media only screen and (max-width: 1200px) {
+              display: none;
+            } 
+          }
+
+          .lappis {
+            animation: typing 6s steps(7) infinite, blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 1.5em;
+            color: white;
+            @media only screen and (max-width: 1200px) {
+              font-size: 1.5em;
+            } 
+          }
+
+          .google {
+            animation: inverttyping 6s steps(7) infinite, blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 1.5em;
+            color: white;
+            @media only screen and (max-width: 1200px) {
+              font-size: 1.5em;
+            } 
+          }
+
+          h1 {
+            margin: 0;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 1.5em;
+            @media only screen and (max-width: 1200px) {
+              font-size: 1.5em;
+            } 
+          }
+
+          @keyframes inverttyping {
+            0% {
+              width: 0;
+              visibility:visible;
+            }
+            10% {
+              width: 6.5ch; 
+            }
+            40% {
+              width: 6.5ch; 
+            }
+            50% {
+              width: 0;
+              visibility: hidden;
+            }
+            100% {
+              width: 0;
+              visibility: hidden;
+            }
+          }
+
+          @keyframes typing {
+            0% {
+              width: 0;
+              visibility: hidden;
+            }
+            50% {
+              width: 0;
+              visibility: hidden;
+            }
+            51% {
+              width: 0;
+              visibility: visible;
+            }
+            60% {
+              width: 6.5ch; 
+            }
+            90% {
+              width: 6.5ch; 
+            }
+            100% {
+              width: 0;
+              visibility: hidden;
+            }
+          }
+              
+          @keyframes blink {
+            50% {
+              border-color: transparent
+            }
+          }
+        }
+        
+        @media only screen and (max-width: 1200px) {
+          padding: 0px;        
+          font-size: 15px;
+
+          p {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
   
     .background_about {
-      background-image: url("../files/background_sobre.png");
+      background-image: url("../files/background_footer.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -18,13 +183,15 @@
       justify-content: center;
       align-items: center;
 
+      margin: 30px 0px;
+
       height: 95%;
-      width: 90%;
+      width: 85%;
 
       .content-about {
         padding-bottom: 9%;
         padding-right: 30px;
-        font-size: 15px;
+        font-size: 14px;
 
         .item {
           display: flex;

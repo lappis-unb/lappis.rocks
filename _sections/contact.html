@@ -1,52 +1,71 @@
-<div id="contact">
-    <div class="contact-wrapper">
-        <span class="contact-heading">Contact</span>
-        <div class="contact-col-wrapper">
-            <div class="contact-col">
-                <ul class="contact-list">
-                    <i class="fas fa-at fa-1x"></i>
-                    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                </ul>
-            </div>
+<footer class="site-footer" id="contact">
 
-            <div class="contact-col-1">
-                <ul class="social-media-list">
-                    {% if site.github_username %}
-                    <a class="github" href="https://github.com/{{ site.github_username }}">
-                        <i class="fab fa-github fa-1x"></i>
-                        <p class="username"> lappis-unb </p>
-                    </a>
-                    {% endif %}
+    <div class="wrapper">
+  
+      <div class="footer-col-wrapper">
+  
+        <div class="footer-col  footer-col-1">
+  
+          <h3><b>Redes:</b></h3>
+  
+          <ul class="social-media-list" style="display:inline-flex">
+            {% if site.github_username %}
+              <li>
+                <a href="https://github.com/{{ site.github_username }}">
+                  <i class="fab fa-github" style="color:gray; font-size:30px; margin-right:20px;"></i>
+                </a>
+              </li>
+            {% endif %}
+  
+            {% if site.twitter_username %}
+              <li>
+                <a href="https://twitter.com/{{ site.twitter_username }}">
+                  <i class="fab fa-twitter" style="color:gray; font-size:30px; margin-right:20px;"></i>
+                </a>
+              </li>
+            {% endif %}
 
-                    {% if site.twitter_username %}
-                    <a class="twitter" href="https://twitter.com/{{ site.twitter_username }}">
-                        <i class="fab fa-twitter fa-1x"></i>
-                        <p class="username"> lappisunb </p>
-                    </a>
-                    {% endif %}
-
-                    {% if site.facebook_username %}
-                    <a class="facebook" href="https://www.facebook.com/{{ site.facebook_username }}/">
-                        <i class="fab fa-facebook fa-1x"></i>
-                        <p class="username"> lappisunb5 </p>
-                    </a>
-                    {% endif %}
-
-                    {% if site.instagram_username %}
-                    <a class="instagram" href="https://www.instagram.com/{{ site.instagram_username }}/">
-                        <i class="fab fa-instagram   fa-1x"></i>
-                        <p class="username"> lappisunb </p>
-                    </a>
-                    {% endif %}
-
-                    {% if site.medium_username %}
-                    <a class="medium" href="https://www.medium.com/{{ site.medium_username }}/">
-                        <i class="fab fa-medium   fa-1x"></i>
-                        <p class="username"> @lappisunbfga </p>
-                    </a>
-                    {% endif %}
-                </ul>
-            </div>
+            {% if site.medium_username %}
+              <li>
+                <a href="https://instagram.com/{{ site.medium_username }}">
+                  <i class="fab fa-medium" style="color:gray; font-size:30px; margin-right:20px;"></i>
+                </a>
+              </li>
+            {% endif %}
+  
+            {% if site.instagram_username %}
+              <li>
+                <a href="https://instagram.com/{{ site.instagram_username }}">
+                  <i class="fab fa-instagram" style="color:gray; font-size:30px; margin-right:20px;"></i>
+                </a>
+              </li>
+            {% endif %}
+  
+            {% if site.facebook_username %}
+              <li>
+                <a href="https://facebook.com/{{ site.facebook_username }}">
+                  <i class="fab fa-facebook" style="color:gray; font-size:30px; margin-right:20px;"></i>
+                </a>
+              </li>
+            {% endif %}
+  
+          </ul>
         </div>
+  
+        <div class="footer-col  footer-col-2">
+  
+          <h3><b>Contato:</b></h3>
+          <p class="text">
+            {{ site.emails  }}
+          </p>
+  
+        </div>
+  
+  
+        <div class="footer-col  footer-col-1">
+          <p class="text">
+          {{ site.address | newline_to_br  }}
+        </div>
+      </div>
     </div>
-</div>
+  </footer>

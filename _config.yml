@@ -18,6 +18,14 @@ facebook_username: lappisunb5
 instagram_username: lappisunb
 medium_username: lappisunbfga
 
+address: |
+  UnB | Universidade de Brasília
+  FGA | Faculdade do gama
+  LAPPIS | Laboratório Aplicado de Produção Pesquisa e Inovação em Software
+
+emails: |
+  caguiar@unb.br
+
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]

@@ -1,5 +1,16 @@
 <div id="about-us">
-  <div class="background_about">
+  <div class="info-banner">
+    <div class="content-about">
+      <div class="item" id="trigger-left">
+        <img class="image-about" src="{{ site.baseurl }}/files/gsoc.png" />
+        <h1 class="lappis">LAPPIS</h1>
+        <h1 class="google">GOOGLE</h1>
+        <h1>SUMMER OF CODE 2024</h1>
+      </div>
+    </div>
+    <a href="https://gsoc.lappis.rocks/">View 2024 LAPPIS program</a>
+  </div>
+  <div class="background_about" id="about-lab">
     <div class="content-about">
       <div class="item" id="trigger-left">
         <img src="{{ site.baseurl }}/files/logo5.png" />
@@ -26,3 +37,24 @@
     </div>
   </div>
 </div>
+
+<script>
+  const contentAboutLab = document.getElementById("about-lab");
+  const headerAbout = document.getElementById("header");
+
+  document.addEventListener("scroll", function() {
+      const headerHeight = 55
+      const titleHeight = 0
+      const titleTop = contentAboutLab.offsetTop - headerHeight
+      const titleBottom = contentAboutLab.offsetHeight + titleTop - titleHeight
+      if (window.pageYOffset > titleTop) {
+          if (window.pageYOffset < titleBottom) {
+              headerAbout.style.backgroundColor = "none"
+              headerAbout.style.backgroundImage = "linear-gradient(to right, #0068b4, #2196f3)"
+          }
+      } else {
+          headerAbout.style.backgroundImage = "none"
+          headerAbout.style.backgroundColor = "#DC7004"
+      }
+  });
+</script>
