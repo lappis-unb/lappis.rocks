@@ -6,7 +6,7 @@
     background-color: #DC7004;
   
     @media only screen and (max-width: 770px) {
-      height: 100%;
+      height: fit-content;
       background-image: none;
     }
   
@@ -14,16 +14,20 @@
       a:not(:last-of-type) {
         margin-right: 30px;
       }
+
+      a {
+        @media only screen and (max-width: 770px) {
+          color: #262626;
+        }
+      }
   
       @media only screen and (max-width: 770px) {
-        z-index: 5;
+        z-index: 40;
         padding-left: 30px;
         padding-top: 0%;
         display: none;
         font-size: 16px;
-        width: 200px;
-        height: 100%;
-        background-color: #0068b4;
+        background-color: white;
       }
     }
   
