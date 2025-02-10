@@ -1,7 +1,7 @@
 ---
 name: Machine Learning for outlier detection in Customer databases (Instituto Eldorado/Dell)
 mark: Instituto Eldorado - Dell
-repo: 'www.carlarocha.org'
+repo: 'https://carlarocha.org/'
 keywords: 'Machine Learning, DevOps, Data science'
 ---
 
