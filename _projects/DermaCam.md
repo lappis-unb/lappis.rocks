@@ -1,5 +1,5 @@
 ---
-name: DermaCam - Early screening for skin cancer
+name: DermaCam - Use of Data Fabric and Machine Learning to early screening for skin cancer
 mark: DermaCam
 repo: 'https://github.com/FAPDF-CancerPeleApp/CancerPeleApp'
 keywords: 'Foundation for the Support of Research of the Federal District (FAP-DF), University of Brasilia (UnB), Early screening for skin cancer, Continuing Education, Health Planning, Screening, Skin Cancer, Data Fabric, Machine Learning'

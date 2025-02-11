@@ -1,5 +1,5 @@
 ---
-name: Energy Efficiency Management - Making the University of Brasilia the 4th most sustainable university in Brazil
+name: Use of Machine Learning to energy Efficiency Management - Making the University of Brasilia the 4th most sustainable university in Brazil
 mark: Energy Management
 repo: 'https://gitlab.com/lappis-unb/projects/SMI'
 keywords: 'University of Brasilia the 4th most sustainable university in Brazil, IoT, Distributed Systems, Energy Monitoring, DevOps, DataViz'
