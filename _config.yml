@@ -14,7 +14,7 @@ baseurl:  # the subpath of your site, e.g. /blog
 url: "https://lappis-unb.github.io/lappis.rocks/" # the base hostname & protocol for your site
 github_username: lappis-unb
 instagram_username: lab.livre
-medium_username: lappisunbfga
+linkedin_username: lappis-rocks
 
 address: |
   UnB | Universidade de Brasília
